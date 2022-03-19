@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#8BCBC8"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivName"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_person"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/met1"
+        android:layout_toRightOf="@id/ivName"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:hint="@string/Name"
+            android:backgroundTint="#DAE9E4"
+            android:textColor="#3C2E3D"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:onClick="clickName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/ivPhone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ivName"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_phone2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/met2"
+        android:layout_toRightOf="@id/ivPhone"
+        android:layout_below="@+id/ivName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhone"
+            android:hint="@string/Phone"
+            android:backgroundTint="#DAE9E4"
+            android:textColor="#3C2E3D"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:onClick="clickPhone"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/met3"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/met1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/met2"
+        android:background="#DAE9E4"
+        android:hint="@string/Area"
+        android:textColor="#3C2E3D"
+        android:textSize="18dp"
+        android:textStyle="bold">
+
+        <Spinner
+            android:id="@+id/sArea"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/met1"
+            android:layout_toRightOf="@id/met2"
+            android:backgroundTint="#3C2E3D"
+            android:entries="@array/Area" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/ivAddress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ivPhone"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_address" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/met4"
+        android:layout_toRightOf="@id/ivAddress"
+        android:layout_below="@+id/met2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAddress"
+            android:hint="@string/Address"
+            android:backgroundTint="#DAE9E4"
+            android:textColor="#3C2E3D"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:onClick="clickAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/met5"
+        android:layout_toRightOf="@id/ivAddress"
+        android:layout_below="@+id/met4"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCity"
+            android:hint="@string/City"
+            android:backgroundTint="#DAE9E4"
+            android:textColor="#3C2E3D"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:onClick="clickCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/met7"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/met5"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/ivAddress"
+        android:background="#DAE9E4"
+        android:hint="@string/State"
+        android:textColor="#3C2E3D"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+        <Spinner
+            android:id="@+id/sState"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/met5"
+            android:layout_toRightOf="@id/ivAddress"
+            android:backgroundTint="#3C2E3D"
+            android:entries="@array/State" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/met6"
+        android:layout_toRightOf="@id/met7"
+        android:layout_below="@+id/met5"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etZip"
+            android:hint="@string/Zip"
+            android:backgroundTint="#DAE9E4"
+            android:textColor="#3C2E3D"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:onClick="clickZip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/ivEmail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/met7"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/met8"
+        android:src="@drawable/ic_email1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/met8"
+        android:layout_toRightOf="@id/ivAddress"
+        android:layout_below="@+id/met7"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:hint="@string/Email"
+            android:backgroundTint="#DAE9E4"
+            android:textColor="#3C2E3D"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:onClick="clickEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/ivBirthday"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/met8"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@id/met9"
+        android:src="@drawable/ic_birthday" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/met9"
+        android:layout_toRightOf="@id/ivAddress"
+        android:layout_below="@+id/met8"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etBirthday"
+            android:hint="@string/Birthday"
+            android:drawableEnd="@drawable/ic_kalender"
+            android:backgroundTint="#DAE9E4"
+            android:textColor="#3C2E3D"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:onClick="clickBirthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Register</string>
+    <string name="Name">Name</string>
+    <string name="Password">Password</string>
+    <string name="EmailID">Email ID</string>
+    <string name="ConfirmPassword">Confirm password</string>
+    <string name="EnterMobile">Enter Mobile</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Register">Register</string>
+    <string name="Phone">Phone</string>
+    <string name="Area">Area</string>
+    <string name="Address">Address</string>
+    <string name="City">City</string>
+    <string name="Zip">Zip</string>
+    <string name="Email">Email</string>
+    <string name="Birthday">Birthday</string>
+    <string name="State">State</string>
+
+    <string-array name="Area">
+        <item>Area</item>
+        <item>+62</item>
+        <item>+60</item>
+        <item>+95</item>
+        <item>+855</item>
+    </string-array>
+
+    <string-array name="State">
+        <item>State</item>
+        <item>Indonesia</item>
+        <item>Malaysia</item>
+        <item>Myanmar</item>
+        <item>Kamboja</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#8BCBC8"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logoakun" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:drawableStart="@drawable/ic_name1"
+            android:drawablePadding="5dp"
+            android:hint="@string/Name"
+            android:backgroundTint="#DAE9E4"
+            android:textColor="#3C2E3D"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:onClick="clickName"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmailID"
+            android:drawableStart="@drawable/ic_email1"
+            android:drawablePadding="5dp"
+            android:hint="@string/EmailID"
+            android:backgroundTint="#DAE9E4"
+            android:textColor="#3C2E3D"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:onClick="clickEmail"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:drawableStart="@drawable/ic_password1"
+            android:drawablePadding="5dp"
+            android:drawableEnd="@drawable/ic_eye"
+            android:hint="@string/Password"
+            android:backgroundTint="#DAE9E4"
+            android:textColor="#3C2E3D"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:onClick="clickPassword"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etConfirmPassword"
+            android:drawableStart="@drawable/ic_password1"
+            android:drawablePadding="5dp"
+            android:drawableEnd="@drawable/ic_eye"
+            android:hint="@string/ConfirmPassword"
+            android:onClick="clickConfirmPassword"
+            android:inputType="textPassword"
+            android:backgroundTint="#DAE9E4"
+            android:textColor="#3C2E3D"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEnterMobile"
+            android:drawableStart="@drawable/ic_phone1"
+            android:drawablePadding="5dp"
+            android:hint="@string/EnterMobile"
+            android:onClick="clickEnterMobile"
+            android:backgroundTint="#DAE9E4"
+            android:textColor="#3C2E3D"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:text="@string/Male"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#3C2E3D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:text="@string/Female"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#3C2E3D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:onClick="clickRegister"
+        android:text="@string/Register"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#FDAE84"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#3C2E3D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
